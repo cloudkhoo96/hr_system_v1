@@ -1,9 +1,11 @@
 import React from 'react'
-import "./Home.css"
+import { Card } from 'react-bootstrap'
 
 const Home = () => {
   return (
-    <div><p>When You're Here, You're Family</p></div>
+   <Card>
+    <Card.Title as="p" className="text-center" size="lg">When You're Here, You're Family</Card.Title>
+   </Card>
   )
 }
 

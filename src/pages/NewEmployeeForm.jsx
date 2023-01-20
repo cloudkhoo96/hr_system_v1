@@ -1,11 +1,11 @@
 import React from 'react'
-import Form from '../components/Form'
+import EmployeeForm from '../components/EmployeeForm'
 
 const NewEmployeeForm = () => {
   return (
     <div>
         <h2>New Employee</h2>
-        <Form />
+        <EmployeeForm />
     </div>
   )
 }

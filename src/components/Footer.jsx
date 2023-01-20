@@ -1,13 +1,13 @@
 import React from 'react'
-import "./Footer.css"
+import { Card } from 'react-bootstrap'
 
 const Footer = () => {
   return (
-    <div>
-        <footer>
+    <Card>
+        <Card.Footer>
             Cloud Khoo @2022
-        </footer>
-    </div>
+        </Card.Footer>
+    </Card>
   )
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Button, Card, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./EmployeesList.css";
 
 const DUMMY_EMPLOYEE = [
   {
@@ -36,11 +36,12 @@ const EmployeesList = () => {
     <>
       <h2>Employees List</h2>
       <Link to="/newemployeeform">
-        <button>Add</button>
+        <Button variant="primary">Add</Button>
       </Link>
+      <br />
 
-      <div>
-        <table class="table-container">
+      <Card>
+        <Table striped bordered hover>
           <thead>
             <tr>
               <th>Name:</th>
@@ -57,8 +58,8 @@ const EmployeesList = () => {
               </tr>
             ))}
           </tbody>
-        </table>
-      </div>
+        </Table>
+      </Card>
     </>
   );
 };

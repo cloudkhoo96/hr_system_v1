@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Header.css"
+import { Card } from 'react-bootstrap'
 
 const Header = () => {
   return (
-    <div>
-        <h1>Employee Management System</h1>
-        </div>
+    <Card>
+        <Card.Header as="h1">Employee Management System</Card.Header>
+        </Card>
   )
 }
 
